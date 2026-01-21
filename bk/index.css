@@ -1,0 +1,27 @@
+/* body {
+  margin: 0;
+  font-family: "Comic Mono";
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Comic Mono";
+  src: url('fonts/comic-mono.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comic Mono";
+  src: url('fonts/comic-mono-bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html, body, #root {
+  margin:  0;
+  padding: 0;
+  height:  100%;
+} */

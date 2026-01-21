@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Nasin Nanpa";
+  src: url('../fonts/nasin-nanpa.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ale {
+  font-family: "Nasin Nanpa";
+  color: white;
+  font-weight: 1;
+  overflow: visible;
+  cursor: url('../../public/img/palisa-ma-lili.png'), auto;
+  background-image: url('../../public/img/ma.png');
+}
+
+.ale *,
+.ale *::before,
+.ale *::after {
+  font-family: inherit !important;
+  color: inherit;
+  font-weight: inherit;
+  overflow: visible;
+  cursor: inherit;
+}
+
+.tawasike {
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(45deg, #205f1a, #1d534a);
+    border-radius: 15px;
+    padding: 10px;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 25px rgb(0,0,0,1);
+    margin: 10px;
+}
+
+.pokipijanponaale {
+  /* background-color: lightblue; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.pokipijanpona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.nimilawapijanpona {
+  /* background-color: orange; */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.janponaale {
+  width: 100%;
+  overflow: visible;
+  /* background-color: gray; */
+  /* background: linear-gradient(30deg, #8e3de4, #44198c); */
+  margin-bottom: 10px;
+}
+
+.janpona {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  overflow: visible;
+  animation-name: tawapijanpona;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+}
+
+.pokipinimisulipijanpona{
+  /* background-color: yellow; */
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 10px 50px;
+  overflow: visible;
+  /* width: fit-content; */
+}
+
+.sitelenpijanpona {
+  height: 150px;
+  border: 0px;
+}
+
+@keyframes tawapijanpona {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.nimisulipijanpona, .linjasikeanpa, .linjasikelawa {
+  background-color: #9e1e98;
+  box-shadow: 5px 5px 25px rgb(0,0,0,1);
+}
+
+.nimisulipijanpona {
+  padding: 0 20px;
+  background: linear-gradient(45deg, #d134c9, #9e1e98);
+  /* background-color: orange; */
+  height:fit-content;
+}
+
+.linjasikeanpa, .linjasikelawa {
+  width: 100%;
+  height: 20px;
+}
+
+.linjasikeanpa {
+  background: linear-gradient(45deg, #cf3ac8, #b423ad);
+
+  --mask:
+    /* radial-gradient(22.36px at 50% calc(100% - 30px),#000 99%,#0000 101%) calc(50% - 20px) 0/40px 100%,
+    radial-gradient(22.36px at 50% calc(100% + 20px),#0000 99%,#000 101%) 50% calc(100% - 10px)/40px 100% repeat-x; */
+    radial-gradient(22.36px at 50% calc(100% - 30px),#000 99%,#0000 101%) 0 0/40px 100%,
+    radial-gradient(22.36px at 50% calc(100% + 20px),#0000 99%,#000 101%) 50% calc(100% - 10px)/40px 100% repeat-x;
+  
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+  animation: tawalinjaanpa 4s linear infinite;
+}
+
+@keyframes tawalinjaanpa {
+  /* Move both gradients horizontally */
+  0% {
+    -webkit-mask-position: 
+      0 0, 
+      20px calc(100% - 10px);
+    mask-position: 
+      0 0, 
+      20px calc(100% - 10px);
+  }
+  100% {
+    -webkit-mask-position: 
+      40px 0, /* Move first gradient right */
+      60px calc(100% - 10px); /* Move second gradient right */
+    mask-position: 
+      40px 0, 
+      60px calc(100% - 10px);
+  }
+}
+
+.linjasikelawa {
+  background: linear-gradient(45deg, #be2fb7, #991792);
+
+  --mask:
+    radial-gradient(22.36px at 50% 30px,#000 99%,#0000 101%) 0 0/40px 100%,
+    radial-gradient(22.36px at 50% -20px,#0000 99%,#000 101%) 50% 10px/40px 100% repeat-x;
+  
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+  animation: tawalinjalawa 4s linear infinite;
+}
+
+@keyframes tawalinjalawa {
+  0% {
+    -webkit-mask-position: 
+      20px 0,           /* First gradient at left edge */
+      40px 10px;     /* Second gradient offset by 20px */
+    mask-position: 
+      20px 0,
+      40px 10px;
+  }
+  100% {
+    -webkit-mask-position: 
+      60px 0,        /* Move right by wave width (40px) */
+      80px 10px;     /* Move right by wave width + offset */
+    mask-position:
+      60px 0,
+      80px 10px;
+  }
+}
+
+.john {
+  margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;
+}
