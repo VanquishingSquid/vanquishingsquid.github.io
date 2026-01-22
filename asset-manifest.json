@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b36c2765.css",
-    "main.js": "/static/js/main.91fade8c.js",
+    "main.js": "/static/js/main.621978d1.js",
     "static/js/453.b2f0db8d.chunk.js": "/static/js/453.b2f0db8d.chunk.js",
     "static/media/nasin-nanpa.ttf": "/static/media/nasin-nanpa.acaebf0bbf2e4a4ec2d2.ttf",
     "index.html": "/index.html",
     "main.b36c2765.css.map": "/static/css/main.b36c2765.css.map",
-    "main.91fade8c.js.map": "/static/js/main.91fade8c.js.map",
+    "main.621978d1.js.map": "/static/js/main.621978d1.js.map",
     "453.b2f0db8d.chunk.js.map": "/static/js/453.b2f0db8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b36c2765.css",
-    "static/js/main.91fade8c.js"
+    "static/js/main.621978d1.js"
   ]
 }
